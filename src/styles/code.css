@@ -1,0 +1,24 @@
+:root {
+  --secondary: 180deg 75% 50%;
+  --light: 264deg 20% 50%;
+  --periwinkle: #c9c9ee;
+  --rose: #baabbd;
+  --violet: #4d4861;
+  --lavender: #d7dae5;
+  --columbia: #b9cdda;
+  --tiffany: #a6d8d4;
+  --straw: #d8dc6a;
+  --orange: #da9235;
+
+  --astro-code-color-text: hsl(var(--theme-text));
+  --astro-code-color-background: hsl(var(--theme-text) / 10%);
+  --astro-code-token-constant: var(--straw);
+  --astro-code-token-string: hsl(var(--theme-text));
+  --astro-code-token-comment: hsl(var(--theme-text) / 25%);
+  --astro-code-token-keyword: var(--periwinkle);
+  --astro-code-token-parameter: hsl(var(--theme-text));
+  --astro-code-token-function: var(--rose);
+  --astro-code-token-string-expression: var(--rose);
+  --astro-code-token-punctuation: hsl(var(--theme-text));
+  --astro-code-token-link: hsl(var(--theme-accent));
+}
