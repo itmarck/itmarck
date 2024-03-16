@@ -11,6 +11,9 @@ import { remarkReadingTime } from './src/utils/remark-reading-time'
 // https://astro.build/config
 export default defineConfig({
   site: 'https://itmarck.github.io/',
+  devToolbar: {
+    enabled: false,
+  },
   integrations: [
     mdx({}),
     tailwind({
