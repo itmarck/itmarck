@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    /* https://tailwindcss.com/docs/customizing-colors#using-css-variables */
+    --theme-background: 220deg 10% 5%;
+    --theme-accent: 335deg 84% 48%;
+    --theme-link: 330deg 49% 67%;
+    --theme-text: 220deg 2% 80%;
+    --theme-surface: 220deg 5% 50%;
+    --theme-quote: 102deg 100% 86%;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  html body {
+    @apply mx-auto flex min-h-screen max-w-3xl flex-col bg-background px-8 pt-16 text-sm font-normal text-text antialiased;
+  }
+}

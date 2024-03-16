@@ -1,0 +1,28 @@
+---
+import { menuLinks, siteConfig } from '@/site-config'
+
+const url = new URL(Astro.request.url)
+const title = siteConfig.title
+---
+
+<header class="mb-20 flex gap-2 flex-col">
+  <a href="/" class="text-surface hover:text-text">
+    <span class="text-xl font-bold sm:text-2xl">
+      {title}
+    </span>
+  </a>
+  <nav class="flex -ms-2 text-surface" aria-label="Main menu">
+    {
+      menuLinks.map((link) => (
+        <a
+          href={link.path}
+          class="px-2 py-0 hover:text-white"
+          aria-current={url.pathname === link.path ? 'page' : false}
+          rel="prefetch"
+        >
+          {link.title}
+        </a>
+      ))
+    }
+  </nav>
+</header>
