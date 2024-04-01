@@ -12,7 +12,7 @@
 		"@astrojs/mdx": "2.2.0",
 		"@astrojs/prefetch": "0.4.1",
 		"@astrojs/rss": "4.0.5",
-		"@astrojs/sitemap": "3.1.1",
+		"@astrojs/sitemap": "3.1.2",
 		"@astrojs/tailwind": "5.1.0",
 		"@iconify-json/mdi": "^1.1.64",
 		"astro": "4.5.5",
